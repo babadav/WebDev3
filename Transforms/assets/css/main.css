@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #555; }
+
+.gallery {
+  text-align: center; }
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background: white;
+  overflow: hidden; }
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 1; }
+
+.gallery-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%); }
+
+#item-1:hover img {
+  transform: translateX(-100%); }
+
+#item-2:hover img {
+  transform: scale(1.5) translateX(-100%); }
+
+#item-3:hover img {
+  transform: rotate(1turn); }
+
+#item-4:hover img {
+  transform: translateY(100%) skew(0deg, 10deg); }
+
+/*# sourceMappingURL=main.css.map */
