@@ -1,0 +1,124 @@
+html, body{	
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+	color: white;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.6rem;
+}
+*{
+	box-sizing: border-box;
+}
+
+.temperature:after{
+	content: '\00B0'
+}
+
+.temperature.high:before{
+	content: 'High:';
+}
+
+.temperature.low:before{
+	content: 'Low:';
+}
+
+.weather-display{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.active-weather{
+	position: relative;
+	margin-top: 20%;
+}
+
+.active-weather-group{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+
+	
+	opacity: 0;
+	transform: translateY(30px);
+	transition: .3s;
+
+}
+.active-weather-group.show{
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
+}
+.backgrounds{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.backgrounds div{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: .3s;
+	opacity: 0;
+
+}
+
+.backgrounds .sunny{
+	background-image: url(../img/sunny.jpg);
+}
+
+.backgrounds .rainy{
+	background-image: url(../img/rainy.jpg);
+}
+
+.body-weather-sunny .backgrounds .sunny{
+	opacity: 1;
+
+}
+
+.body-weather-rainy .backgrounds .rainy{
+	opacity: 1;
+
+}
+
+.very-hot{
+	color: red;
+
+}
+
+.day-select{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.day-option.show{
+	color: lightblue;
+}
+
+
+
+
+
+
+
+

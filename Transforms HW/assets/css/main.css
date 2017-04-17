@@ -37,6 +37,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%, -50%); 
+  z-index: -1;
 }
 
 #pic-1:hover img {
@@ -68,13 +69,35 @@ body {
   transform: rotate(45deg) skew(35deg, 72deg) translateX(-50%) translateY(-100%);
 	}
 
-#pic-8:hover img {
-    background-color: rgba(0,0,0,0.65);
+/*#pic-8 img:hover .overlay { 
+    background-color: black;
     position: absolute;
-    opacity: .6;
+    opacity: .8;
+    z-index: 0;
 
-	}
+	}*/
+/*
+#pic-8 img {
+  z-index:-1;
+}
+.overlay{
+  background-color: black;
+  opacity: 1;
+  width: 100%;
+  padding-bottom:100%;
+  z-index: 10;
 
+}
+
+.overlay:hover{
+  opacity: .5;
+}*/
+.overlay {
+  position:absolute;
+  height: 400px;
+  width:400px;
+  background:black;
+}
 /*http://hasinhayder.github.io/ImageCaptionHoverAnimation/*/
 
 
