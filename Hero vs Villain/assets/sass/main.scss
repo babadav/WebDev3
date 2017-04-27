@@ -1,0 +1,231 @@
+@import 'vars';
+
+
+html, body{
+	@include: maxwh;
+	background-color: $background-color;
+	box-sizing: border-box;
+}
+
+
+
+li{
+	list-style-type: none;
+}
+
+p{
+	color: white;
+	font-family: $body-font;
+}
+
+
+.landing-hero{
+	@include: maxwh;
+	background-image: url("../img/landing-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.bat-hero-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	margin-bottom: 20px;
+
+
+
+}
+
+.hero-batman{
+	width: 100%;
+	height: 50%;
+}
+
+.hero-batman img{
+	width: 100%;
+	height: 60%;
+}
+
+.bat-description-wrap{
+	width: 100%;
+	display: none;
+	background-color: $bat-bg;
+}
+
+.alt-description-batman{
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+	p{
+	width: 61%;
+    line-height: 2;
+    padding-left: 41px;
+    padding-right: 41px;
+	}
+}
+
+
+
+.alt-pic-batman{
+	width: 60%;
+	margin-top: 20px;
+
+		 img{
+		width: 100%;
+	}
+}
+
+.joker-hero-wrap{
+	@include: display-flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+
+		.title-joker{
+		font-size: 2em;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		font-color: $joker-font-color;
+		text-align: center;
+	
+
+		 p {
+			color: $joker-font-color;
+	}
+}
+
+
+
+	.hero-joker{
+		width: 100%;
+		height: 50%;
+	
+
+		 img{
+			width: 100%;
+			height: 60%;
+		}
+	}
+}
+
+
+	.joker-alt-description-wrap{
+		width: 100%;
+		display: flex;
+		display: none;
+		background-color: #550a55;
+
+
+		p{
+		margin: 0 auto;
+	    width: 86%;
+	    line-height: 2;
+	    margin-top: 100px;
+	    color: $joker-font-color;
+		}
+	}
+
+
+
+
+
+nav{
+	@include; display-flex;
+	padding-top: 50px;
+	
+
+
+	form{
+		display: flex;
+	justify-content: space-around;
+	}
+}
+
+
+
+.hidden{
+	display: none;
+	
+}
+
+.visible{
+	display: block;
+}
+
+.bat-dart{
+	position: absolute;
+    width: 21%;
+    left: 80%;
+    top: 67%;
+    transition: all 10s;
+}
+
+.bat-dart:hover{
+	transform: rotate(1turn) scale(1.5);
+	
+}
+
+.alt-pic-joker{
+	margin-top: 20px;
+	display: flex;
+    flex-direction: row-reverse;
+
+	 img{
+		margin-top: 20px;
+	}
+}
+
+.bat-dart img{
+	width: 80%;
+
+}
+
+.joker-logo{
+	width: 20%;
+	position: absolute;
+    top: 10%;
+    left: 60px;
+    transition: all 2s;
+}
+
+.joker-logo:hover{
+	transform: scale(1.5)
+}
+
+.joker-logo img{
+	width: 100%;
+
+}
+
+
+
+.title-batman{
+	font-size: 2em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

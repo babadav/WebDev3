@@ -1,0 +1,111 @@
+
+*{
+	box-sizing:border-box;
+}
+
+@import 'variables';
+
+@mixin bp{
+
+	@media only screen and (min-width: $breakpoint){
+		@content;
+	}
+
+}
+
+html, body{
+	background: $primary-color;
+	font-family: helvetica, sans-serif;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: $text-color;
+
+	@include bp{
+		font-size: 4rem;
+	}
+}
+
+p{
+	color: $text-color;
+}
+
+header{
+	width: $col-1-1;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 1px solid $accent-color;
+
+	@include bp{
+		width: $col-3-4;
+	}
+
+}
+
+@media only screen and (min-width: 768px){
+	h1{
+		font-size: 4rem;
+	}
+
+	header{
+		width: $col-3-4;
+	}
+
+
+}
+
+.how-to{
+	width: $col-1-1;
+	padding: 20px;
+	display: flex;
+	margin: 0 auto;
+	max-width: 1024px;
+	justify-content: space-around;
+
+	p{
+		width: $col-1-2;
+		padding: 0 10px;
+
+
+
+	}
+}
+
+.widget{
+	width: 30%;
+	color: $text-color;
+
+}
+
+.feature-widget{
+	@extend.widget;
+	font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

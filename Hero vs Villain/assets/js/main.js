@@ -11,7 +11,7 @@ $(document).ready(function(){
 	$('.joker-logo').click(function(){
 		$('.joker-hero-wrap').toggleClass('visible');
 		$('.joker-alt-description-wrap').toggleClass('visible');
-	})
+	});
 
 });
 
