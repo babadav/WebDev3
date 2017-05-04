@@ -1,12 +1,11 @@
-@import 'vars';
+@import 'vars';  
 
 
 html, body{
-	@include: maxwh;
-	background-color: $background-color;
+	@include maxwh;
+	background-color: black;
 	box-sizing: border-box;
 }
-
 
 
 li{
@@ -20,7 +19,8 @@ p{
 
 
 .landing-hero{
-	@include: maxwh;
+	position: absolute;
+	@include maxwh;
 	background-image: url("../img/landing-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -34,6 +34,8 @@ p{
 	align-items: center;
 	display: none;
 	margin-bottom: 20px;
+	position: absolute;
+	top:100%;
 
 
 
@@ -51,7 +53,7 @@ p{
 
 .bat-description-wrap{
 	width: 100%;
-	display: none;
+	display: block;
 	background-color: $bat-bg;
 }
 
@@ -80,10 +82,12 @@ p{
 }
 
 .joker-hero-wrap{
-	@include: display-flex;
+	@include  display-flex;
 	flex-direction: column;
 	align-items: center;
 	display: none;
+	position: absolute;
+	top: -186%;
 
 		.title-joker{
 		font-size: 2em;
@@ -116,7 +120,7 @@ p{
 	.joker-alt-description-wrap{
 		width: 100%;
 		display: flex;
-		display: none;
+		display: block;
 		background-color: #550a55;
 
 
@@ -134,7 +138,7 @@ p{
 
 
 nav{
-	@include; display-flex;
+	@include  display-flex;
 	padding-top: 50px;
 	
 
@@ -159,9 +163,10 @@ nav{
 .bat-dart{
 	position: absolute;
     width: 21%;
-    left: 80%;
-    top: 67%;
-    transition: all 10s;
+    top: 72%;
+    right: 21px;
+    transition: all .5s;
+    z-index: 10;
 }
 
 .bat-dart:hover{
@@ -170,7 +175,6 @@ nav{
 }
 
 .alt-pic-joker{
-	margin-top: 20px;
 	display: flex;
     flex-direction: row-reverse;
 
@@ -187,9 +191,10 @@ nav{
 .joker-logo{
 	width: 20%;
 	position: absolute;
-    top: 10%;
-    left: 60px;
+    top: 72%;
+    left: 21px;
     transition: all 2s;
+    z-index: 10;
 }
 
 .joker-logo:hover{
@@ -209,6 +214,109 @@ nav{
 	margin-top: 10px;
 	text-align: center;
 }
+
+
+@media screen and (min-width: 400px){
+
+	.landing-hero{
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		background-size: contain;
+	}
+
+	.bat-dart{
+	top: 24%;
+    right: 9px;
+	}
+
+	.joker-logo{
+		top: 24%;
+		left: 5px;
+	}
+
+	.alt-pic-batman{
+		position: absolute;
+		top: -3%;
+		width: 100%;
+	}
+
+	.bat-description-wrap{
+	    position: absolute;
+    	top: 91%;
+
+	}
+
+	.bat-text{
+		position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	top: 320px;
+    	line-height: 2;
+	}
+
+	.joker-hero-wrap{
+
+		.hero-joker{
+			width: 63%;
+   			height: 50%;
+
+   			img{
+   				width: 100%;
+
+   			}
+		}
+
+		.joker-text{
+			line-height: 2;
+		}
+
+		.title-joker{
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+
+	
+}
+
+@media screen and (min-width: 670px){
+
+	.landing-hero{
+		width: 100%;
+		height: 100%;
+   		background-size: cover;
+	}
+
+	.bat-dart{
+		top: 38%;
+	}
+
+	.joker-logo{
+		top: 38%;
+	}
+
+	.bat-text{
+		top: 946px;
+	}
+
+	.joker-hero-wrap{
+
+		.hero-joker{
+			width: 100%;
+		}
+
+		.alt-pic-joker img{
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+}
+
+
 
 
 
