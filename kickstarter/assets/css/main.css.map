@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["/assets/sass/main.css","/assets/sass/main.css"],"sourcesContent":["\n*{\n\tbox-sizing:border-box;\n}\n\n@import 'variables';\n\n\n\n\n\n\n",""],"names":[],"mappings":"AACA,AAAA,CAAC,CAAA;EACA,UAAU,EAAC,UAAU,GACrB"}
