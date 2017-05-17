@@ -12,7 +12,9 @@ nav {
   display: flex;
   justify-content: flex-end; }
   nav a {
-    color: white; }
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em; }
   nav .inner-nav {
     width: 50%;
     display: flex;
@@ -43,5 +45,17 @@ nav {
   height: 100%; }
   .two-guys img {
     width: 100%; }
+
+.back-pic {
+  width: 100%;
+  height: 870px;
+  background-color: #1DA8D8;
+  display: flex;
+  justify-content: center; }
+
+footer {
+  width: 100%;
+  height: 140px;
+  background-color: #6D6E70; }
 
 /*# sourceMappingURL=main.css.map */
