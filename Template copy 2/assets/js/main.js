@@ -9,7 +9,7 @@ $(function(){
 	}, 1000);
 
 	$('footer').on('click', function(){
-		$.scrollTo($('header'), 400);
+		$.scrollTo($('.logo'), 400);
 	});
 
 	$('.ad-container').parallax({imageSrc: 'http://lorempixel.com/output/food-q-c-1280-720-8.jpg'})
